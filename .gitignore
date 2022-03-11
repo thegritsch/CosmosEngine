@@ -1,5 +1,12 @@
+# Directories
+.vs/
+bin/
+bin-int/
 # Prerequisites
 *.d
+
+# Files
+*.user
 
 # Compiled Object files
 *.slo
