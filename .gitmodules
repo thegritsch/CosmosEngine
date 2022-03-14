@@ -1,0 +1,3 @@
+[submodule "cosmos/vendor/spdlog"]
+	path = cosmos/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
