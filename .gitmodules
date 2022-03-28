@@ -1,3 +1,6 @@
 [submodule "cosmos/vendor/spdlog"]
 	path = cosmos/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Cosmos/vendor/GLFW"]
+	path = Cosmos/vendor/GLFW
+	url = https://github.com/thegritsch/glfw

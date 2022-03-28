@@ -7,6 +7,9 @@
     <Filter Include="Cosmos\Events">
       <UniqueIdentifier>{9DD2827C-0993-FEB2-D2CD-47303E4D438F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Cosmos.h" />
@@ -34,6 +37,13 @@
     <ClInclude Include="src\Cosmos\Log.h">
       <Filter>Cosmos</Filter>
     </ClInclude>
+    <ClInclude Include="src\Cosmos\Window.h">
+      <Filter>Cosmos</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Cosmos\Application.cpp">
@@ -42,5 +52,9 @@
     <ClCompile Include="src\Cosmos\Log.cpp">
       <Filter>Cosmos</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmpch.cpp" />
   </ItemGroup>
 </Project>

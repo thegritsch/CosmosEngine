@@ -1,4 +1,6 @@
+#include "cmpch.h"
 #include "Log.h"
+
 
 namespace Cosmos {
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;

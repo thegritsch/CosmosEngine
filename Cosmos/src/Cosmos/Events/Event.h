@@ -1,9 +1,8 @@
 #pragma once
-
+#include "cmpch.h"
 #include "Cosmos/Core.h"
 
-#include <string>
-#include <functional>
+
 
 namespace Cosmos {
 

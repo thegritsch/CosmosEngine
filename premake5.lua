@@ -9,6 +9,11 @@ workspace "Cosmos"
 	}
 
 outputdir= "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+-- Include directories relative to root folder
+IncludeDir = {}
+IncludeDir["GLFW"] = "Cosmos/vendor/GLFW/include"
+
+include "Cosmos/vendor/GLFW"
 
 project "Cosmos"
 	location "Cosmos"
@@ -17,6 +22,9 @@ project "Cosmos"
 	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "cmpch.h"
+	pchsource "Cosmos/src/cmpch.cpp"
 
 	files
 	{
@@ -27,7 +35,14 @@ project "Cosmos"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
