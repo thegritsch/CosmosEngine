@@ -9,3 +9,5 @@
 #else 
 	#error COSMOS ONLY SUPPORTS WINDOWS
 #endif // COS_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

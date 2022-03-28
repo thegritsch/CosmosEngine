@@ -4,6 +4,9 @@
     <Filter Include="Cosmos">
       <UniqueIdentifier>{D93442AC-C5D6-6C82-AE91-80D69AD2F3D2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cosmos\Events">
+      <UniqueIdentifier>{9DD2827C-0993-FEB2-D2CD-47303E4D438F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Cosmos.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Cosmos\EntryPoint.h">
       <Filter>Cosmos</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cosmos\Events\ApplicationEvent.h">
+      <Filter>Cosmos\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cosmos\Events\Event.h">
+      <Filter>Cosmos\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cosmos\Events\KeyEvent.h">
+      <Filter>Cosmos\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cosmos\Events\MouseEvent.h">
+      <Filter>Cosmos\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Cosmos\Log.h">
       <Filter>Cosmos</Filter>
